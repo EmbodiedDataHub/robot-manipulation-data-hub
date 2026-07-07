@@ -1,0 +1,76 @@
+Starting batch: 13 files
+[FAIL] Surveys/VLA-Datasets-Benchmarks-Data-Engines-2604.23001.pdf
+2026-07-07 12:12:54.112 python3[12421:18377043] 2026-07-07 12:12:54.103650 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Data Acquisition/Video Teleoperation/Robotic Telekinesis- Learning a Robotic Hand Imitator by Watching Humans on YouTube.pdf
+2026-07-07 12:12:35.164 python3[12375:18376324] 2026-07-07 12:12:35.158776 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Surveys/Towards-Unified-Robot-Manipulation-Survey-2510.10903.pdf
+2026-07-07 11:58:51.395 python3[11325:18357521] 2026-07-07 11:58:51.390292 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Data Acquisition/Video Teleoperation/MediaPipe Hands- On-device Real-time Hand Tracking.pdf
+2026-07-07 12:13:34.084 python3[12491:18378455] 2026-07-07 12:13:34.077873 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Data Acquisition/Video Teleoperation/VideoDex- Learning Dexterity from Internet Videos.pdf
+2026-07-07 12:13:37.982 python3[12504:18378677] 2026-07-07 12:13:37.973944 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Surveys/In-Hand-Manipulation-Survey-2401.07915.pdf
+2026-07-07 12:14:08.690 python3[12577:18380272] 2026-07-07 12:14:08.681351 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Surveys/Open-X-Embodiment-2310.08864.pdf
+2026-07-07 12:15:07.410 python3[12668:18382078] 2026-07-07 12:15:07.404153 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Surveys/Embodied-Learning-Object-Centric-Manipulation-2408.11537.pdf
+2026-07-07 12:15:54.354 python3[12732:18383548] 2026-07-07 12:15:54.349550 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Surveys/Robo-DM-Data-Management-2505.15558.pdf
+2026-07-07 12:17:02.594 python3[12827:18385363] 2026-07-07 12:17:02.588590 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Surveys/VLA-Systematic-Review-2507.10672.pdf
+2026-07-07 12:14:48.622 python3[12637:18381441] 2026-07-07 12:14:48.615636 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Surveys/VLA-Anatomy-Survey-2512.11362.pdf
+2026-07-07 12:13:55.381 python3[12545:18379460] 2026-07-07 12:13:55.374192 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Data Acquisition/Video Teleoperation/Robotic Telekinesis- Learning a Robotic Hand Imitator by Watching Humans on YouTube.pdf
+2026-07-07 12:17:42.748 python3[12881:18386464] 2026-07-07 12:17:42.740909 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Data Acquisition/Video Teleoperation/From One Hand to Multiple Hands Imitation Learning for Dexterous.pdf
+2026-07-07 12:17:47.562 python3[12894:18386596] 2026-07-07 12:17:47.555198 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Data Acquisition/Video Teleoperation/VideoDex- Learning Dexterity from Internet Videos.pdf
+2026-07-07 12:18:16.569 python3[12946:18388253] 2026-07-07 12:18:16.562959 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Data Acquisition/Video Teleoperation/Single RGB-D Camera Teleoperation for General Robotic Manipulation.pdf
+2026-07-07 12:17:53.015 python3[12913:18386885] 2026-07-07 12:17:53.008481 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+
+Done: success=0, failed=13, total=13
+[FAIL] Surveys/VLA-Systematic-Review-2507.10672.pdf
+2026-07-07 12:18:50.949 python3[13014:18389599] 2026-07-07 12:18:50.942320 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Data Acquisition/Video Teleoperation/From One Hand to Multiple Hands Imitation Learning for Dexterous.pdf
+2026-07-07 12:21:08.124 python3[13175:18392472] 2026-07-07 12:21:08.118727 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Surveys/Towards-Unified-Robot-Manipulation-Survey-2510.10903.pdf
+2026-07-07 12:18:47.578 python3[13001:18389533] 2026-07-07 12:18:47.571655 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Surveys/Towards-Unified-Robot-Manipulation-Survey-2510.10903.pdf
+2026-07-07 12:21:41.861 python3[13225:18393482] 2026-07-07 12:21:41.855481 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Surveys/VLA-Anatomy-Survey-2512.11362.pdf
+2026-07-07 12:27:39.276 python3[13614:18398505] 2026-07-07 12:27:39.271135 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Surveys/VLA-Anatomy-Survey-2512.11362.pdf
+2026-07-07 12:27:39.589 python3[13616:18398513] 2026-07-07 12:27:39.583819 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+[FAIL] Data Acquisition/Video Teleoperation/Single RGB-D Camera Teleoperation for General Robotic Manipulation.pdf
+2026-07-07 12:29:51.837 python3[13771:18401028] 2026-07-07 12:29:51.832696 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+
+Done: success=0, failed=13, total=13
+[FAIL] Data Acquisition/Video Teleoperation/Single RGB-D Camera Teleoperation for General Robotic Manipulation.pdf
+2026-07-07 12:29:54.414 python3[13769:18401021] 2026-07-07 12:29:54.404446 [W:onnxruntime:, coreml_execution_provider.cc:137 GetCapability] CoreMLExecutionProvider::GetCapability, number of partitions supported by CoreML: 7 number of nodes in the graph: 681 number of nodes supported by CoreML: 657
+
+
+Done: success=0, failed=13, total=13

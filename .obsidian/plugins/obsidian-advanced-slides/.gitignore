@@ -1,0 +1,15 @@
+# vscode specific
+.vscode 
+
+# node specific
+node_modules
+package-lock.json
+
+# test specific
+test-vault
+
+# coverage report
+coverage
+
+# docs
+docs/public

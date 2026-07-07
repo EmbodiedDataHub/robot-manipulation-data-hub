@@ -1,0 +1,18 @@
+{
+  "userAdmonitions": {},
+  "syntaxHighlight": false,
+  "copyButton": false,
+  "version": "11.0.3",
+  "autoCollapse": false,
+  "defaultCollapseType": "open",
+  "injectColor": true,
+  "parseTitles": true,
+  "dropShadow": true,
+  "hideEmpty": false,
+  "icons": [],
+  "useFontAwesome": true,
+  "rpgDownloadedOnce": false,
+  "msDocConverted": true,
+  "useSnippet": true,
+  "snippetPath": "custom-admonitions.af5f91"
+}

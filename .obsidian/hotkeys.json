@@ -1,0 +1,18 @@
+{
+  "jupymd:create-jupyter-notebook": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "J"
+    }
+  ],
+  "claudian:inline-edit": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "L"
+    }
+  ]
+}

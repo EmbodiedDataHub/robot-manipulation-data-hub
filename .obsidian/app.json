@@ -1,0 +1,17 @@
+{
+  "attachmentFolderPath": "./.attachments",
+  "newFileLocation": "current",
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": false,
+  "promptDelete": false,
+  "propertiesInDocument": "visible",
+  "readableLineLength": false,
+  "showUnsupportedFiles": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}

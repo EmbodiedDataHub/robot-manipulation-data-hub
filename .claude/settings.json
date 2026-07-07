@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit(~/.claude/skills/deep-research/**)",
+      "Edit(~/.claude/skills/literature-search/**)"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+	"extends": "@tsconfig/node16/tsconfig.json",
+	"compilerOptions": {
+		"strict": false,
+		"baseUrl": ".",
+		"inlineSourceMap": true,
+		"inlineSources": true,
+		"allowJs": true,
+		"noImplicitAny": true,
+		"resolveJsonModule": true,
+		"lib": [
+			"DOM",
+			"ES2021"
+		]
+	},
+	"exclude": [
+		"node_modules",
+		"docs",
+		"test-vault"
+	]
+}

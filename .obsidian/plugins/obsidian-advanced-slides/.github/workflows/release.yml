@@ -1,0 +1,56 @@
+name: release
+
+on:
+  push:
+    tags:
+    - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: "Build Changelog"
+        id: build_changelog
+        uses: mikepenz/release-changelog-builder-action@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          configuration: "./.github/workflows/release_changelog.json"
+          commitMode: "true"
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '17'
+      - name: Setup yarn
+        run: npm install -g yarn
+      - name: set config
+        id: config-1
+        run: git config --global url."https://github.com".insteadOf git://github.com
+      - name: set config 2
+        id: config-2
+        run: git config --global url."https://".insteadOf git://
+      - name: set config 3
+        id: config-3
+        run: git config --global url."https://github.com/".insteadOf ssh://git@github.com
+      - name: Setup dependencies
+        run: yarn
+      - name: Build advanced slides
+        run: npm run build
+      - name: Test advanced slides
+        run: npm test
+      - uses: ArtiomTr/jest-coverage-report-action@v2.0-rc.6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          package-manager: yarn
+      - name: Archive Release
+        uses: thedoctor0/zip-release@master
+        with:
+          type: 'zip'
+          filename: 'obsidian-advanced-slides.zip'
+          directory: 'test-vault/.obsidian/plugins/obsidian-advanced-slides/'
+      - name: Create Release
+        uses: ncipollo/release-action@v1.9.0
+        with:
+          artifacts: "test-vault/.obsidian/plugins/obsidian-advanced-slides/obsidian-advanced-slides.zip, test-vault/.obsidian/plugins/obsidian-advanced-slides/main.js, test-vault/.obsidian/plugins/obsidian-advanced-slides/manifest.json, test-vault/.obsidian/plugins/obsidian-advanced-slides/styles.css"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          body: ${{steps.build_changelog.outputs.changelog}}
