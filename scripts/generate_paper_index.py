@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 from pathlib import Path
-from urllib.parse import quote
 
 ROOT = Path("/Users/rookie/Desktop/RoBot/paper")
 INDEX = ROOT / "论文索引.md"
@@ -34,6 +33,89 @@ READING_SECTIONS: list[tuple[str, str, str, str, list[tuple[str, str, str]]]] = 
             ("Surveys/Towards-Unified-Robot-Manipulation-Survey-2510.10903.pdf", "操作全领域综述", "选读"),
             ("Surveys/Embodied-Learning-Object-Centric-Manipulation-2408.11537.pdf", "物体中心具身学习综述", "选读"),
             ("Surveys/Large-VLA-Models-Survey-2508.13133.pdf", "大 VLM-VLA 综述", "选读"),
+        ],
+    ),
+    (
+        "0-algorithm",
+        "0 · VLA 算法层",
+        "BC → Diffusion Policy → RT-1/RT-2 → OpenVLA/Octo → π0。配合 [算法层清单](../note/VLA算法层学习路线与论文清单.md) 阅读。",
+        "3–4 周",
+        [
+            (
+                "Algorithm/IL-Analysis/What Matters in Learning from Offline Human Demonstrations for Robot Manipulation.pdf",
+                "What Matters in IL · 模仿学习经验结论",
+                "选读",
+            ),
+            (
+                "Algorithm/Diffusion-Policy/Diffusion Policy- Visuomotor Policy Learning via Action Diffusion.pdf",
+                "Diffusion Policy",
+                "⭐",
+            ),
+            (
+                "Algorithm/RT-1/RT-1- Robotics Transformer for Real-World Control at Scale.pdf",
+                "RT-1 · Robotics Transformer",
+                "⭐",
+            ),
+            (
+                "Algorithm/RT-2/RT-2- Vision-Language-Action Models Transfer Web Knowledge to Robotic Control.pdf",
+                "RT-2 · VLA 开山",
+                "⭐",
+            ),
+            (
+                "Algorithm/PaLM-E/PaLM-E- An Embodied Multimodal Language Model.pdf",
+                "PaLM-E · 具身多模态 LLM",
+                "选读",
+            ),
+            (
+                "Algorithm/VIMA/VIMA- General Robot Manipulation with Multimodal Prompts.pdf",
+                "VIMA · 多模态 prompt 操作",
+                "选读",
+            ),
+            (
+                "Algorithm/BC-Z/BC-Z- Zero-Shot Task Generalization with Robotic Imitation Learning.pdf",
+                "BC-Z · 语言条件 BC",
+                "选读",
+            ),
+            (
+                "Algorithm/OpenVLA/OpenVLA- An Open-Source Vision-Language-Action Model.pdf",
+                "OpenVLA · 开源 7B VLA",
+                "⭐",
+            ),
+            (
+                "Algorithm/Octo/Octo- An Open-Source Generalist Robot Policy.pdf",
+                "Octo · 开源通用策略",
+                "⭐",
+            ),
+            (
+                "Algorithm/RoboCat/RoboCat- A Self-Improving Generalist Agent for Robotic Manipulation.pdf",
+                "RoboCat · 自改进 data flywheel",
+                "选读",
+            ),
+            (
+                "Algorithm/Pi0/Pi0- A Vision-Language-Action Flow Model for General Robot Control.pdf",
+                "π0 · Flow Matching VLA",
+                "⭐",
+            ),
+            (
+                "Algorithm/3D-Diffusion-Policy/3D Diffusion Policy- Generalizable Visuomotor Policy Learning via Simple 3D Representations.pdf",
+                "3D Diffusion Policy",
+                "选读",
+            ),
+            (
+                "Algorithm/BridgeData-V2/BridgeData V2- A Dataset for Robot Learning at Scale.pdf",
+                "BridgeData V2 · 低成本桌面数据集",
+                "选读",
+            ),
+            (
+                "Algorithm/DROID/DROID- A Large-Scale In-The-Wild Robot Manipulation Dataset.pdf",
+                "DROID · 野外大规模数据集",
+                "选读",
+            ),
+            (
+                "Algorithm/Flow-Matching/Flow Matching for Generative Modeling - A Tutorial Introduction.pdf",
+                "Flow Matching 教程 · π0 理论基础",
+                "选读",
+            ),
         ],
     ),
     (
@@ -254,7 +336,8 @@ READING_SECTIONS.append(
 
 
 def md_link(rel: str, label: str) -> str:
-    return f"[{label}]({quote(rel, safe='/')})"
+    # Angle brackets: Cursor/VS Code open local PDFs reliably (URL-encoding breaks some paths).
+    return f"[{label}](<{rel}>)"
 
 
 def row_for_pdf(rel: str, short: str, priority: str, global_idx: int) -> tuple[str, bool, bool]:
@@ -276,8 +359,8 @@ def generate() -> None:
     lines: list[str] = [
         "# 论文索引",
         "",
-        "> 按 **推荐阅读顺序** 编排 · 目录 `paper/` · 更新：2026-07-07  ",
-        "> 点击 **EN** / **中文** / **对照** 打开 PDF。主线：**ALOHA → UMI → Open-TeleVision → RDT**",
+        "> 按 **推荐阅读顺序** 编排 · 目录 `paper/` · 更新：2026-07-08  ",
+        "> 点击 **EN** / **中文** / **对照** 打开 PDF（链接相对本文件所在目录 `paper/`）。若预览里点不开，请 **Cmd+Click** 或在文件树中按路径打开。",
         "",
         "## 阅读路线",
         "",
@@ -358,6 +441,7 @@ def generate() -> None:
             "| 你的目标 | 跳转到 |",
             "|---------|--------|",
             "| 建立全局观 | [0 · 综述](#0-overview) |",
+            "| 学 VLA 算法主线 | [0 · VLA 算法层](#0-algorithm) |",
             "| 搭双臂 teleop 采数据 | [1 · ALOHA](#1-aloha) |",
             "| 低成本野外采数据 | [2 · UMI](#2-umi) |",
             "| 人形 / VR teleop | [3 · VR 人形](#3-vr-humanoid) |",
@@ -367,6 +451,8 @@ def generate() -> None:
             "",
             "## 相关文档",
             "",
+            "- [VLA 算法层学习路线](../note/VLA算法层学习路线与论文清单.md)",
+            "- [VLA 训练与数据全貌（深度版）](../note/VLA训练与数据全貌-深度版.md)",
             "- [机器人操作数据学习路线报告](../note/机器人操作数据学习路线报告.md)",
             "- [机器人数据工作综合调研报告](../note/机器人数据工作综合调研报告.md)",
             "- [快速入门](../note/快速入门-最短学习路径.md)",

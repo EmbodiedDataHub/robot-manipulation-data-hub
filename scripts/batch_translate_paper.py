@@ -4,7 +4,6 @@ import json
 import subprocess
 import sys
 from pathlib import Path
-from urllib.parse import quote
 
 ROOT = Path("/Users/rookie/Desktop/RoBot/paper")
 CONFIG = Path.home() / ".config/PDFMathTranslate/config.json"
@@ -33,6 +32,21 @@ def find_pdfs() -> list[Path]:
     return sorted(pdfs, key=lambda p: (p.stat().st_size, str(p)))
 
 
+def cleanup_glossary_artifacts(pdf: Path) -> None:
+    """Remove pdf2zh sidecar glossary CSV files (not needed after translation)."""
+    for pattern in (f"{pdf.stem}.zh.glossary.csv", "*.zh.glossary.csv"):
+        for path in pdf.parent.glob(pattern):
+            path.unlink(missing_ok=True)
+
+
+def cleanup_all_glossary_csv() -> int:
+    removed = 0
+    for path in ROOT.rglob("*.zh.glossary.csv"):
+        path.unlink(missing_ok=True)
+        removed += 1
+    return removed
+
+
 def translate(pdf: Path, key: str) -> bool:
     cmd = [
         "pdf2zh_next",
@@ -46,6 +60,8 @@ def translate(pdf: Path, key: str) -> bool:
     ]
     r = subprocess.run(cmd, capture_output=True, text=True, cwd=pdf.parent)
     ok = r.returncode == 0 and (pdf.parent / f"{pdf.stem}.zh.mono.pdf").exists()
+    if ok:
+        cleanup_glossary_artifacts(pdf)
     with LOG.open("a", encoding="utf-8") as f:
         status = "OK" if ok else "FAIL"
         f.write(f"[{status}] {pdf.relative_to(ROOT)}\n")
@@ -56,7 +72,7 @@ def translate(pdf: Path, key: str) -> bool:
 
 def md_link(path: Path, label: str) -> str:
     rel = path.relative_to(ROOT).as_posix()
-    return f"[{label}]({quote(rel, safe='/')})"
+    return f"[{label}](<{rel}>)"
 
 
 def has_translation(stem: str, directory: Path):
@@ -79,6 +95,9 @@ def main() -> None:
     pdfs = find_pdfs()
     if not pdfs:
         print("Nothing to translate.", flush=True)
+        removed = cleanup_all_glossary_csv()
+        if removed:
+            print(f"Removed {removed} leftover glossary CSV file(s).", flush=True)
         regenerate_index()
         return
 
@@ -91,8 +110,9 @@ def main() -> None:
         else:
             fail += 1
 
+    removed = cleanup_all_glossary_csv()
     regenerate_index()
-    summary = f"\nDone: success={ok}, failed={fail}, total={len(pdfs)}\n"
+    summary = f"\nDone: success={ok}, failed={fail}, total={len(pdfs)}, glossary_csv_removed={removed}\n"
     print(summary, flush=True)
     with LOG.open("a", encoding="utf-8") as f:
         f.write(summary)

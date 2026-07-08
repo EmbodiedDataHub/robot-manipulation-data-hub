@@ -1,16 +1,19 @@
-[1/13] VLA-Datasets-Benchmarks-Data-Engines-2604.23001.pdf
-[2/13] MediaPipe Hands- On-device Real-time Hand Tracking.pdf
-[3/13] In-Hand-Manipulation-Survey-2401.07915.pdf
-[4/13] Open-X-Embodiment-2310.08864.pdf
-[5/13] Embodied-Learning-Object-Centric-Manipulation-2408.11537.pdf
-[6/13] Robo-DM-Data-Management-2505.15558.pdf
-[7/13] Robotic Telekinesis- Learning a Robotic Hand Imitator by Watching Humans on YouTube.pdf
-[8/13] VideoDex- Learning Dexterity from Internet Videos.pdf
-[9/13] VLA-Systematic-Review-2507.10672.pdf
-[10/13] From One Hand to Multiple Hands Imitation Learning for Dexterous.pdf
-[11/13] Towards-Unified-Robot-Manipulation-Survey-2510.10903.pdf
-[12/13] VLA-Anatomy-Survey-2512.11362.pdf
-[13/13] Single RGB-D Camera Teleoperation for General Robotic Manipulation.pdf
+[1/15] BC-Z- Zero-Shot Task Generalization with Robotic Imitation Learning.pdf
+[2/15] BridgeData V2- A Dataset for Robot Learning at Scale.pdf
+[3/15] Octo- An Open-Source Generalist Robot Policy.pdf
+[4/15] DROID- A Large-Scale In-The-Wild Robot Manipulation Dataset.pdf
+[5/15] Flow Matching for Generative Modeling - A Tutorial Introduction.pdf
+[6/15] 3D Diffusion Policy- Generalizable Visuomotor Policy Learning via Simple 3D Representations.pdf
+[7/15] What Matters in Learning from Offline Human Demonstrations for Robot Manipulation.pdf
+[8/15] Diffusion Policy- Visuomotor Policy Learning via Action Diffusion.pdf
+[9/15] Pi0- A Vision-Language-Action Flow Model for General Robot Control.pdf
+[10/15] PaLM-E- An Embodied Multimodal Language Model.pdf
+[11/15] OpenVLA- An Open-Source Vision-Language-Action Model.pdf
+[12/15] RT-1- Robotics Transformer for Real-World Control at Scale.pdf
+[13/15] RT-2- Vision-Language-Action Models Transfer Web Knowledge to Robotic Control.pdf
+[14/15] RoboCat- A Self-Improving Generalist Agent for Robotic Manipulation.pdf
+[15/15] VIMA- General Robot Manipulation with Multimodal Prompts.pdf
+Wrote /Users/rookie/Desktop/RoBot/paper/论文索引.md (72 papers, 0 in appendix)
 
-Done: success=0, failed=13, total=13
+Done: success=15, failed=0, total=15
 
