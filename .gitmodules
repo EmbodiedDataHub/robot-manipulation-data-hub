@@ -1,3 +1,9 @@
 [submodule "code/act"]
 	path = code/act
 	url = git@github.com:tonyzhaozh/act.git
+[submodule "book/embodied-ai-guide"]
+	path = book/embodied-ai-guide
+	url = git@github.com:EmbodiedDataHub/Embodied-AI-Guide.git
+[submodule "code/diffusion_policy"]
+	path = code/diffusion_policy
+	url = git@github.com:EmbodiedDataHub/diffusion_policy.git
