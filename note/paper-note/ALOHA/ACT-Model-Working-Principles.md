@@ -511,6 +511,13 @@ action = root['/action'][start_ts:]
 
 整体是 **CVAE + DETR-style Transformer Decoder**，定义在 `code/act/detr/models/detr_vae.py`。
 
+![ACT DETRVAE 训练/推理结构](./assets/act-detrvae-architecture.svg)
+
+![CNNMLP vs ACT 对照](./assets/cnnmlp-vs-act-comparison.svg)
+
+<details>
+<summary>ASCII 备用</summary>
+
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                        训练阶段                                   │
@@ -529,6 +536,8 @@ action = root['/action'][start_ts:]
 │                                              动作 chunk (T×14)  │
 └─────────────────────────────────────────────────────────────────┘
 ```
+
+</details>
 
 ### 3.1 CVAE Encoder（动作序列编码器）
 
@@ -1185,12 +1194,26 @@ raw_action = weighted_sum(actions_for_curr_step)
 
 | 功能 | 文件 |
 |------|------|
-| Policy 封装 & Loss | `code/act/policy.py` |
+| **Policy 训练/推理分叉** | `code/act/policy.py` |
+| **完整调用链导读** | [CNNMLPPolicy 代码导读](./CNNMLPPolicy-Code-Walkthrough.md) · [ACT 索引](./ACTPolicy-CNNMLPPolicy-Code-Walkthrough.md) |
 | CVAE 模型定义 | `code/act/detr/models/detr_vae.py` |
 | Transformer | `code/act/detr/models/transformer.py` |
 | 数据加载 | `code/act/utils.py` |
 | 训练 / 评估循环 | `code/act/imitate_episodes.py` |
 | 模型构建 & 优化器 | `code/act/detr/main.py` |
+
+---
+
+## 13. 相关资源
+
+| 类型 | 链接 |
+|------|------|
+| **视频（首选入门）** | [Bilibili：ACT / ALOHA 精析](https://www.bilibili.com/video/BV1xGF3eeEjB) · 从来你又调皮 · ~42 min |
+| ALOHA 项目页 | [tonyzhaozh.github.io/aloha](https://tonyzhaozh.github.io/aloha) |
+| ALOHA 解读笔记 | [ALOHA-Learning-Fine-Grained-Bimanual-Manipulation.md](./ALOHA-Learning-Fine-Grained-Bimanual-Manipulation.md) |
+| 多媒体资料总表 | [学习资料全景索引](../../resources/links/资源索引.md) |
+| 官方代码 | [github.com/tonyzhaozh/act](https://github.com/tonyzhaozh/act) · 本仓库 `code/act/` |
+| 论文 | [论文索引 §1 ALOHA](../../../paper/论文索引.md#1-aloha) · arXiv:2304.13705 |
 
 ---
 

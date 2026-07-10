@@ -429,12 +429,17 @@ RT-2 输出:  一串 token → 解码成机器人动作
 | 你想了解… | 读这个 | 在地图哪层 |
 |----------|--------|-----------|
 | 机器人基本概念 | [快速入门 Day 0](./快速入门-最短学习路径.md) | 2F 硬件 & 控制 |
-| 模仿学习 / ACT | [ACT 原理笔记](./paper-note/ACT-Model-Working-Principles.md) | 3F 策略算法 |
-| ALOHA 怎么录数据 | [ALOHA 笔记](./paper-note/ALOHA-Learning-Fine-Grained-Bimanual-Manipulation.md) | 4F 采集 |
+| **IL 全部范式概览** | [**IL-Paradigms 概述**](./paper-note/IL-Paradigms/概述.md) | 3F 策略 · BC/DP/VLA |
+| **VLA 训练范式全景（IL+RL）** | [**VLA训练范式全景图**](./VLA训练范式全景图.md) | 训练信号 · 分阶段 Recipe |
+| 模仿学习 / ACT | [ALOHA 笔记集](./paper-note/ALOHA/概述.md) · [ACT 原理](./paper-note/ALOHA/ACT-Model-Working-Principles.md) · [B站 ACT/ALOHA 精析](https://www.bilibili.com/video/BV1xGF3eeEjB) | 3F 策略算法 |
+| ALOHA 怎么录数据 | [ALOHA 论文笔记](./paper-note/ALOHA/ALOHA-Learning-Fine-Grained-Bimanual-Manipulation.md) | 4F 采集 |
 | UMI 手持采集 | [UMI 笔记](./paper-note/UMI-Universal-Manipulation-Interface.md) | 4F 采集 |
 | 数据全景 / Data Engine | [数据调研报告](./机器人数据工作综合调研报告.md) | 4F |
 | VLA 数据集 & Benchmark | [VLA 数据综述笔记](./paper-note/VLA-Datasets-Benchmarks-Data-Engines.md) | 4F + 5F |
 | 按顺序读论文 | [论文索引](../paper/论文索引.md) | 全楼 |
+| **视频 / 博客 / 代码** | [学习资料全景索引](./resources/links/资源索引.md) | 全楼 · 不限 PDF |
+| RDT 入门（视频优先） | [RDT B 站解读](https://www.bilibili.com/video/BV1FjyHYmEDQ) → [RDT 笔记](./paper-note/RDT-Foundation-Models.md) | 5F |
+| **做 RDT 向 FM（零基础）** | [RDT 向 FM 学习路线](./零基础-RDT向FM学习路线.md) | 全栈 · 12 周 |
 
 **推荐阅读顺序（全局版，2–3 周）：**
 

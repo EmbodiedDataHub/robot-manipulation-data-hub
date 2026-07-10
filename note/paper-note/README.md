@@ -4,9 +4,13 @@
 
 | 子目录 / 文件 | 主题 | 入口 |
 |---------------|------|------|
+| **[IL-Paradigms/](./IL-Paradigms/概述.md)** | **模仿学习 Action Head 范式 + 阅读顺序** | [概述](./IL-Paradigms/概述.md) |
+| **[VLA训练范式全景图.md](../VLA训练范式全景图.md)** | **IL + RL + VLA 全部训练范式** | 单篇 |
+| **[Data-Pipeline/](./Data-Pipeline/概述.md)** | **数采 → 格式统一 → VLA 训练前处理** | [概述](./Data-Pipeline/概述.md) · [总方案](../数采到VLA训练-数据管线整体方案.md) |
 | **[ALOHA/](./ALOHA/概述.md)** | 低成本双臂 teleop + ACT 算法 + `code/act` | [概述](./ALOHA/概述.md) |
 | **[Diffusion-Policy/](./Diffusion-Policy/概述.md)** | 动作扩散策略 + `code/diffusion_policy` | [概述](./Diffusion-Policy/概述.md) |
 | [RDT-Foundation-Models.md](./RDT-Foundation-Models.md) | RDT-1B / RDT2 扩散 Foundation Model | 单篇 |
+| [DAgger-Dataset-Aggregation.md](./DAgger-Dataset-Aggregation.md) | 交互式 IL · 分布偏移 | 单篇 |
 | [UMI-Universal-Manipulation-Interface.md](./UMI-Universal-Manipulation-Interface.md) | UMI 野外手持采集 | 单篇 |
 | [VLA-Datasets-Benchmarks-Data-Engines.md](./VLA-Datasets-Benchmarks-Data-Engines.md) | VLA 数据集与数据引擎 | 单篇 |
 

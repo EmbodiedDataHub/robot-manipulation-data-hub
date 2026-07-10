@@ -579,7 +579,7 @@ Deploy:
 | 数据怎么采 | §五 | [论文索引 §1-5](../paper/论文索引.md) | — |
 | 数据怎么处理 | §六 | [数据调研报告 §4](./机器人数据工作综合调研报告.md) | — |
 | Pretrain 怎么训 | §二 Stage 1 | [RDT/Qwen 论文](../paper/论文索引.md#4-foundation) | [算法层清单](./VLA算法层学习路线与论文清单.md) |
-| Action Head 区别 | §三 | [ACT 笔记](./paper-note/ACT-Model-Working-Principles.md) | Diffusion Policy, RT-2, OpenVLA |
+| Action Head 区别 | §三 | [ACT 笔记](./paper-note/ALOHA/ACT-Model-Working-Principles.md) | Diffusion Policy, RT-2, OpenVLA |
 | 部署闭环 | §八 | LeRobot deploy 文档 | π0, ACT |
 
 **建议阅读顺序（深度版，3–4 周）**：

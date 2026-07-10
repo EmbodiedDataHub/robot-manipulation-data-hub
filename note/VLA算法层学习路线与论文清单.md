@@ -2,7 +2,7 @@
 
 > **目标**：按 **算法层** 建立阅读顺序，从模仿学习基础 → Action Head → VLA 主线 → Foundation Model。  
 > **状态**：标注本地是否已收录；**论文下载与翻译后续批量进行**。  
-> **关联**：[训练与数据全貌（深度版）](./VLA训练与数据全貌-深度版.md) · [论文索引](../paper/论文索引.md)
+> **关联**：[**VLA 训练范式全景图（IL+RL）**](./VLA训练范式全景图.md) · [**IL 范式概览**](./paper-note/IL-Paradigms/概述.md) · [训练与数据全貌（深度版）](./VLA训练与数据全貌-深度版.md) · [论文索引](../paper/论文索引.md) · [多媒体资料索引](./resources/links/资源索引.md)（视频 / 博客 / 代码）
 
 ---
 
@@ -48,12 +48,12 @@ Layer 7  前沿                 世界模型 · Ego→VLA · RL post-training
 
 | 序 | 优先级 | 论文 | arXiv | 本地 | 译 | 读什么 | 搞懂什么 |
 |:--:|:------:|------|-------|:----:|:--:|--------|---------|
-| 0.1 | ⭐ | **ALOHA** (含 ACT) | [2304.13705](https://arxiv.org/abs/2304.13705) | ✅ | 🔤 | Method + ACT 段 | Action Chunking、CVAE、双臂 joint space |
+| 0.1 | ⭐ | **ALOHA** (含 ACT) | [2304.13705](https://arxiv.org/abs/2304.13705) | ✅ | 🔤 | Method + ACT 段 | Action Chunking、CVAE、双臂 joint space · **视频** [B站精析](https://www.bilibili.com/video/BV1xGF3eeEjB) |
 | 0.2 | ⭐ | **Diffusion Policy** | [2303.04137](https://arxiv.org/abs/2303.04137) | ⬜ | — | §1–3 + Fig | 多模态动作、denoise 出轨迹 |
 | 0.3 | ○ | What Matters in IL (Mosaic) | [2106.00672](https://arxiv.org/abs/2106.00672) | ⬜ | — | Abstract | 数据量/质量/增强的经验结论 |
-| 0.4 | ○ | DAgger | [1011.0686](https://arxiv.org/abs/1011.0686) | ⬜ | — | §1–2 | 误差累积的 classic 解法（了解即可） |
+| 0.4 | ○ | DAgger | [1011.0686](https://arxiv.org/abs/1011.0686) | ✅ | — | §1–2 | 误差累积的 classic 解法（了解即可） → [[DAgger-Dataset-Aggregation\|精读笔记]] |
 
-**本地笔记**：[ACT 原理](./paper-note/ACT-Model-Working-Principles.md)
+**本地笔记**：[ALOHA 笔记集概述](./paper-note/ALOHA/概述.md) · [CNNMLPPolicy 代码导读](./paper-note/ALOHA/CNNMLPPolicy-Code-Walkthrough.md) · [ACT 原理](./paper-note/ALOHA/ACT-Model-Working-Principles.md) · [ACTPolicy 代码导读](./paper-note/ALOHA/ACTPolicy-Code-Walkthrough.md) · **视频**：[B站 ACT/ALOHA 精析](https://www.bilibili.com/video/BV1xGF3eeEjB)（~42 min）
 
 **自测**：
 - BC 和 VLA 训练目标有何相同？（都是 (obs, lang) → action 的监督学习）
@@ -132,8 +132,8 @@ Layer 7  前沿                 世界模型 · Ego→VLA · RL post-training
 | 序 | 优先级 | 论文 | arXiv | 本地 | 译 | 读什么 | 搞懂什么 |
 |:--:|:------:|------|-------|:----:|:--:|--------|---------|
 | 5.1 | ⭐ | **π0 (Pi-Zero)** | [2410.24164](https://arxiv.org/abs/2410.24164) | ⬜ | — | 全文 | Flow matching、PaliGemma、50Hz |
-| 5.2 | ⭐ | **RDT-1B** | 见本地 | — | ✅ | 🔤 | Method | DiT、Unified Action、双臂 |
-| 5.3 | ⭐ | **RDT2** | 见本地 | — | ✅ | 🔤 | 数据+模型 | 规模化 recipe |
+| 5.2 | ⭐ | **RDT-1B** | 见本地 | — | ✅ | 🔤 | Method | DiT、Unified Action、双臂 · **视频** [B站解读](https://www.bilibili.com/video/BV1FjyHYmEDQ) · [笔记](./paper-note/RDT-Foundation-Models.md) |
+| 5.3 | ⭐ | **RDT2** | 见本地 | — | ✅ | 🔤 | 数据+模型 | 规模化 recipe · [笔记](./paper-note/RDT-Foundation-Models.md#part-b-rdt2) |
 | 5.4 | ⭐ | **Qwen-RobotManip** | 见本地 | — | ✅ | 🔤 | 数据管线 | 中文 VLA 数据工程 |
 | 5.5 | ○ | **GR00T N1** | NVIDIA 2025 | ⬜ | — | Technical report | 人形 whole-body VLA |
 

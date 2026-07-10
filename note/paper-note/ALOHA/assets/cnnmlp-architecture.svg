@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="920" viewBox="0 0 980 920">
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#475569"/>
+    </marker>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="980" height="920" fill="#f8fafc"/>
+  <style>
+    text { font-family: PingFang SC, Microsoft YaHei, Helvetica Neue, Arial, sans-serif; }
+    .title { font-size: 22px; font-weight: 700; fill: #f8fafc; }
+    .h1 { font-size: 15px; font-weight: 700; }
+    .h2 { font-size: 14px; font-weight: 600; }
+    .body { font-size: 12px; fill: #334155; }
+    .muted { font-size: 11px; fill: #64748b; }
+  </style>
+
+  <rect x="24" y="20" width="932" height="56" rx="12" fill="#0f172a" filter="url(#shadow)"/>
+  <text x="490" y="55" text-anchor="middle" class="title">CNNMLPPolicy 前向结构 Forward Pass</text>
+  <rect x="40" y="100" width="420" height="72" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2" filter="url(#shadow)"/>
+  <text x="250.0" y="128" text-anchor="middle" class="body" font-weight="700">image</text>
+  <text x="250.0" y="148" text-anchor="middle" class="body" font-weight="400">(B, C, 3, 480, 640)  C=2 cameras</text>
+  <rect x="520" y="100" width="420" height="72" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2" filter="url(#shadow)"/>
+  <text x="730.0" y="128" text-anchor="middle" class="body" font-weight="700">qpos</text>
+  <text x="730.0" y="148" text-anchor="middle" class="body" font-weight="400">(B, 14) 双臂关节 + 夹爪</text>
+  <rect x="170" y="196" width="160" height="44" rx="8" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="250.0" y="224" text-anchor="middle" class="body" font-weight="700">ImageNet Normalize</text>
+  <line x1="250" y1="172" x2="250" y2="196" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="490" y="268" text-anchor="middle" class="muted" font-weight="600">每路相机独立 ResNet18（权重不共享）</text>
+  <rect x="40" y="286" width="420" height="300" rx="12" fill="#ffffff" stroke="#22c55e" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="40" y="286" width="420" height="34" rx="12" fill="#dcfce7"/>
+  <text x="250" y="308" text-anchor="middle" fill="#166534" font-size="15" font-weight="700">cam_0 支路</text>
+  <rect x="70" y="336" width="360" height="48" rx="8" fill="#f0fdf4" stroke="#86efac" stroke-width="1" filter="url(#shadow)"/>
+  <text x="250" y="364" text-anchor="middle" class="body" font-weight="700">ResNet18 (ImageNet 预训练, FrozenBN)</text>
+  <text x="250" y="384" text-anchor="middle" class="body" font-weight="400">layer4 → (B, 512, 15, 20)</text>
+  <rect x="70" y="398" width="360" height="88" rx="8" fill="#fef9c3" stroke="#facc15" stroke-width="1" filter="url(#shadow)"/>
+  <text x="250" y="426" text-anchor="middle" class="body" font-weight="700">3× Conv2d 下采样</text>
+  <text x="250" y="446" text-anchor="middle" class="body" font-weight="400">512→128→64→32, kernel=5</text>
+  <text x="250" y="466" text-anchor="middle" class="body" font-weight="400">输出 (B, 32, 3, 8)</text>
+  <text x="250" y="486" text-anchor="middle" class="body" font-weight="400">flatten → (B, 768)</text>
+  <rect x="120" y="504" width="260" height="56" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2" filter="url(#shadow)"/>
+  <text x="250" y="532" text-anchor="middle" class="body" font-weight="700">cam_0 feature</text>
+  <text x="250" y="552" text-anchor="middle" class="body" font-weight="400">768-d</text>
+  <rect x="520" y="286" width="420" height="300" rx="12" fill="#ffffff" stroke="#22c55e" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="520" y="286" width="420" height="34" rx="12" fill="#dcfce7"/>
+  <text x="730" y="308" text-anchor="middle" fill="#166534" font-size="15" font-weight="700">cam_1 支路</text>
+  <rect x="550" y="336" width="360" height="48" rx="8" fill="#f0fdf4" stroke="#86efac" stroke-width="1" filter="url(#shadow)"/>
+  <text x="730" y="364" text-anchor="middle" class="body" font-weight="700">ResNet18 (ImageNet 预训练, FrozenBN)</text>
+  <text x="730" y="384" text-anchor="middle" class="body" font-weight="400">layer4 → (B, 512, 15, 20)</text>
+  <rect x="550" y="398" width="360" height="88" rx="8" fill="#fef9c3" stroke="#facc15" stroke-width="1" filter="url(#shadow)"/>
+  <text x="730" y="426" text-anchor="middle" class="body" font-weight="700">3× Conv2d 下采样</text>
+  <text x="730" y="446" text-anchor="middle" class="body" font-weight="400">512→128→64→32, kernel=5</text>
+  <text x="730" y="466" text-anchor="middle" class="body" font-weight="400">输出 (B, 32, 3, 8)</text>
+  <text x="730" y="486" text-anchor="middle" class="body" font-weight="400">flatten → (B, 768)</text>
+  <rect x="600" y="504" width="260" height="56" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2" filter="url(#shadow)"/>
+  <text x="730" y="532" text-anchor="middle" class="body" font-weight="700">cam_1 feature</text>
+  <text x="730" y="552" text-anchor="middle" class="body" font-weight="400">768-d</text>
+  <line x1="210" y1="240" x2="210" y2="286" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="290" y1="240" x2="290" y2="286" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="210" y1="240" x2="730" y2="286" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="300" y="616" width="380" height="56" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="490.0" y="644" text-anchor="middle" class="body" font-weight="700">concat camera features</text>
+  <text x="490.0" y="664" text-anchor="middle" class="body" font-weight="400">(B, 1536) = 768 x 2</text>
+  <line x1="250" y1="560" x2="400" y2="616" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="730" y1="560" x2="580" y2="616" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="300" y="696" width="380" height="56" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="490.0" y="724" text-anchor="middle" class="body" font-weight="700">concat qpos</text>
+  <text x="490.0" y="744" text-anchor="middle" class="body" font-weight="400">(B, 1550) = 1536 + 14</text>
+  <line x1="490" y1="672" x2="490" y2="696" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="730" y1="172" x2="730" y2="680" stroke="#475569" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+  <rect x="260" y="776" width="460" height="88" rx="10" fill="#fff7ed" stroke="#fb923c" stroke-width="2" filter="url(#shadow)"/>
+  <text x="490.0" y="804" text-anchor="middle" class="body" font-weight="700">MLP (hidden_depth=2)</text>
+  <text x="490.0" y="824" text-anchor="middle" class="body" font-weight="400">Linear 1550-1024-ReLU-1024-ReLU-1024-14</text>
+  <text x="490.0" y="844" text-anchor="middle" class="body" font-weight="400">code: detr_vae.py CNNMLP.mlp</text>
+  <line x1="490" y1="752" x2="490" y2="776" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="330" y="884" width="320" height="24" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+  <text x="490.0" y="912" text-anchor="middle" class="body" font-weight="700">a_hat_t  (B, 14)  单步关节目标</text>
+  <rect x="40" y="616" width="220" height="180" rx="10" fill="#ffffff" stroke="#6366f1" stroke-width="2" filter="url(#shadow)"/>
+  <text x="150" y="644" text-anchor="middle" class="body" font-weight="700">训练 (actions != None)</text>
+  <text x="150" y="664" text-anchor="middle" class="body" font-weight="400">label = actions[:, 0]</text>
+  <text x="150" y="684" text-anchor="middle" class="body" font-weight="400">只监督「下一步」</text>
+  <text x="150" y="704" text-anchor="middle" class="body" font-weight="400">loss = MSE(a_hat, a)</text>
+  <text x="150" y="724" text-anchor="middle" class="body" font-weight="400">policy.py L51-63</text>
+  <text x="150" y="744" text-anchor="middle" class="body" font-weight="400">每 env step query</text>
+  <rect x="720" y="616" width="220" height="180" rx="10" fill="#ffffff" stroke="#6366f1" stroke-width="2" filter="url(#shadow)"/>
+  <text x="830" y="644" text-anchor="middle" class="body" font-weight="700">推理 (actions = None)</text>
+  <text x="830" y="664" text-anchor="middle" class="body" font-weight="400">forward 不用 actions</text>
+  <text x="830" y="684" text-anchor="middle" class="body" font-weight="400">每控制周期 call 一次</text>
+  <text x="830" y="704" text-anchor="middle" class="body" font-weight="400">直接执行 a_hat_t</text>
+  <text x="830" y="724" text-anchor="middle" class="body" font-weight="400">imitate_episodes.py</text>
+  <text x="830" y="744" text-anchor="middle" class="body" font-weight="400">无 chunk / 无 CVAE</text>
+
+</svg>
