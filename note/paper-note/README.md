@@ -4,6 +4,7 @@
 
 | 子目录 / 文件 | 主题 | 入口 |
 |---------------|------|------|
+| **[VLM/](./VLM/概述.md)** | **视觉-语言模型预训练 · VLA Stage 0 底座** | [概述](./VLM/概述.md) |
 | **[IL-Paradigms/](./IL-Paradigms/概述.md)** | **模仿学习 Action Head 范式 + 阅读顺序** | [概述](./IL-Paradigms/概述.md) |
 | **[VLA训练范式全景图.md](../VLA训练范式全景图.md)** | **IL + RL + VLA 全部训练范式** | 单篇 |
 | **[Data-Pipeline/](./Data-Pipeline/概述.md)** | **数采 → 格式统一 → VLA 训练前处理** | [概述](./Data-Pipeline/概述.md) · [总方案](../数采到VLA训练-数据管线整体方案.md) |

@@ -14,7 +14,7 @@ tags:
   - teleoperation
 aliases:
   - Universal Manipulation Interface
-paper_path: "paper/Data Acquisition/Hand-Held Grippers Teleoperation/UMIs/UMI - Universal Manipulation Interface- In-The-Wild Robot Teaching Without In-The-Wild Robots.pdf"
+paper_path: "paper/Data-Collection/UMI/UMI/UMI - Universal Manipulation Interface- In-The-Wild Robot Teaching Without In-The-Wild Robots.pdf"
 website: "https://umi-gripper.github.io"
 ---
 

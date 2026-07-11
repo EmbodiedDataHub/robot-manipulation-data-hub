@@ -12,7 +12,7 @@ tags:
   - action-chunking
 aliases:
   - Diffusion Policy 2023
-paper_path: "paper/Algorithm/Diffusion-Policy/Diffusion Policy- Visuomotor Policy Learning via Action Diffusion.pdf"
+paper_path: "paper/IL-Action-Head/Diffusion-Policy/Diffusion Policy- Visuomotor Policy Learning via Action Diffusion.pdf"
 code_path: "code/diffusion_policy"
 project_website: "https://diffusion-policy.cs.columbia.edu"
 ---

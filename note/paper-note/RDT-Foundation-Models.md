@@ -20,8 +20,8 @@ aliases:
   - Robotics Diffusion Transformer
   - RDT Foundation Models
 paper_path:
-  - "paper/Foundation Models/RDT-1B- a Diffusion Foundation Model for Bimanual Manipulation.pdf"
-  - "paper/Foundation Models/RDT2.pdf"
+  - "paper/Foundation-Models/RDT-1B/RDT-1B- a Diffusion Foundation Model for Bimanual Manipulation.pdf"
+  - "paper/Foundation-Models/RDT2/RDT2.pdf"
 project_website: "https://rdt-robotics.github.io"
 related_notes:
   - "note/paper-note/ALOHA/ALOHA-Learning-Fine-Grained-Bimanual-Manipulation.md"

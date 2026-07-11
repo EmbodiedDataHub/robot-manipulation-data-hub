@@ -13,7 +13,7 @@ tags:
   - low-cost-robotics
 aliases:
   - ALOHA 2023
-pdf_path: "paper/Data Acquisition/Robot Teleoperation/ALOHA - Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware.pdf"
+pdf_path: "paper/Data-Collection/ALOHA/ALOHA/ALOHA - Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware.pdf"
 code_path: "code/act"
 project_website: "https://tonyzhaozh.github.io/aloha"
 ---

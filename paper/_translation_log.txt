@@ -1,18 +1,8 @@
-Starting batch: 15 files
-[OK] Algorithm/BC-Z/BC-Z- Zero-Shot Task Generalization with Robotic Imitation Learning.pdf
-[OK] Algorithm/BridgeData-V2/BridgeData V2- A Dataset for Robot Learning at Scale.pdf
-[OK] Algorithm/Octo/Octo- An Open-Source Generalist Robot Policy.pdf
-[OK] Algorithm/DROID/DROID- A Large-Scale In-The-Wild Robot Manipulation Dataset.pdf
-[OK] Algorithm/Flow-Matching/Flow Matching for Generative Modeling - A Tutorial Introduction.pdf
-[OK] Algorithm/3D-Diffusion-Policy/3D Diffusion Policy- Generalizable Visuomotor Policy Learning via Simple 3D Representations.pdf
-[OK] Algorithm/IL-Analysis/What Matters in Learning from Offline Human Demonstrations for Robot Manipulation.pdf
-[OK] Algorithm/Diffusion-Policy/Diffusion Policy- Visuomotor Policy Learning via Action Diffusion.pdf
-[OK] Algorithm/Pi0/Pi0- A Vision-Language-Action Flow Model for General Robot Control.pdf
-[OK] Algorithm/PaLM-E/PaLM-E- An Embodied Multimodal Language Model.pdf
-[OK] Algorithm/OpenVLA/OpenVLA- An Open-Source Vision-Language-Action Model.pdf
-[OK] Algorithm/RT-1/RT-1- Robotics Transformer for Real-World Control at Scale.pdf
-[OK] Algorithm/RT-2/RT-2- Vision-Language-Action Models Transfer Web Knowledge to Robotic Control.pdf
-[OK] Algorithm/RoboCat/RoboCat- A Self-Improving Generalist Agent for Robotic Manipulation.pdf
-[OK] Algorithm/VIMA/VIMA- General Robot Manipulation with Multimodal Prompts.pdf
+Starting batch: 5 files
+[OK] VLM/SigLIP- Sigmoid Loss for Language Image Pre-Training.pdf
+[OK] VLM/PaliGemma- A versatile 3B VLM for transfer.pdf
+[OK] VLM/LLaVA- Visual Instruction Tuning.pdf
+[OK] VLM/CLIP- Learning Transferable Visual Models From Natural Language Supervision.pdf
+[OK] VLM/Prismatic VLMs- Investigating the Design Space of Visually-Conditioned Language Models.pdf
 
-Done: success=15, failed=0, total=15
+Done: success=5, failed=0, total=5, glossary_csv_removed=0

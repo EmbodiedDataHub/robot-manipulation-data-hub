@@ -10,7 +10,7 @@ tags:
   - open-source
   - LoRA
   - paradigm
-pdf_path: "paper/Algorithm/OpenVLA/OpenVLA- An Open-Source Vision-Language-Action Model.pdf"
+pdf_path: "paper/VLA/OpenVLA/OpenVLA- An Open-Source Vision-Language-Action Model.pdf"
 related_notes:
   - "./RT-2-Vision-Language-Action.md"
   - "./Octo.md"

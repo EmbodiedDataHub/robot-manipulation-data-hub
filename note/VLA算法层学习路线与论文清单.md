@@ -200,25 +200,25 @@ Layer 7  前沿                 世界模型 · Ego→VLA · RL post-training
 
 ## 八、算法层论文库（已下载）
 
-以下 **15 篇** 已收录于 [`paper/Algorithm/`](../paper/论文索引.md#0-algorithm)，**中文 mono + dual 已全部生成**（2026-07-07）。
+以下 **15 篇** 已收录于 [`paper/VLA/`](../paper/论文索引.md#0-algorithm)，**中文 mono + dual 已全部生成**（2026-07-07）。
 
 | # | 论文 | arXiv | 目录 | 本地 | 译 |
 |---|------|-------|------|:----:|:--:|
-| 1 | Diffusion Policy | 2303.04137 | `Algorithm/Diffusion-Policy/` | ✅ | 🔤 |
-| 2 | RT-1 | 2212.06817 | `Algorithm/RT-1/` | ✅ | 🔤 |
-| 3 | RT-2 | 2307.15818 | `Algorithm/RT-2/` | ✅ | 🔤 |
-| 4 | PaLM-E | 2303.03378 | `Algorithm/PaLM-E/` | ✅ | 🔤 |
-| 5 | OpenVLA | 2406.09246 | `Algorithm/OpenVLA/` | ✅ | 🔤 |
-| 6 | Octo | 2405.12250 | `Algorithm/Octo/` | ✅ | 🔤 |
-| 7 | π0 (Pi-Zero) | 2410.24164 | `Algorithm/Pi0/` | ✅ | 🔤 |
-| 8 | RoboCat | 2306.11706 | `Algorithm/RoboCat/` | ✅ | 🔤 |
-| 9 | BC-Z | 2203.02827 | `Algorithm/BC-Z/` | ✅ | 🔤 |
-| 10 | VIMA | 2210.03094 | `Algorithm/VIMA/` | ✅ | 🔤 |
-| 11 | What Matters in IL | 2106.00672 | `Algorithm/IL-Analysis/` | ✅ | 🔤 |
-| 12 | 3D Diffusion Policy | 2406.01586 | `Algorithm/3D-Diffusion-Policy/` | ✅ | 🔤 |
-| 13 | BridgeData V2 | 2309.12247 | `Algorithm/BridgeData-V2/` | ✅ | 🔤 |
-| 14 | DROID | 2303.03135 | `Algorithm/DROID/` | ✅ | 🔤 |
-| 15 | Flow Matching intro | 2404.08427 | `Algorithm/Flow-Matching/` | ✅ | 🔤 |
+| 1 | Diffusion Policy | 2303.04137 | `IL-Action-Head/Diffusion-Policy/` | ✅ | 🔤 |
+| 2 | RT-1 | 2212.06817 | `VLA/RT-1/` | ✅ | 🔤 |
+| 3 | RT-2 | 2307.15818 | `VLA/RT-2/` | ✅ | 🔤 |
+| 4 | PaLM-E | 2303.03378 | `VLA/PaLM-E/` | ✅ | 🔤 |
+| 5 | OpenVLA | 2406.09246 | `VLA/OpenVLA/` | ✅ | 🔤 |
+| 6 | Octo | 2405.12250 | `VLA/Octo/` | ✅ | 🔤 |
+| 7 | π0 (Pi-Zero) | 2410.24164 | `VLA/Pi0/` | ✅ | 🔤 |
+| 8 | RoboCat | 2306.11706 | `VLA/RoboCat/` | ✅ | 🔤 |
+| 9 | BC-Z | 2203.02827 | `VLA/BC-Z/` | ✅ | 🔤 |
+| 10 | VIMA | 2210.03094 | `VLA/VIMA/` | ✅ | 🔤 |
+| 11 | What Matters in IL | 2106.00672 | `IL-Action-Head/IL-Analysis/` | ✅ | 🔤 |
+| 12 | 3D Diffusion Policy | 2406.01586 | `IL-Action-Head/3D-Diffusion-Policy/` | ✅ | 🔤 |
+| 13 | BridgeData V2 | 2309.12247 | `Datasets/BridgeData-V2/` | ✅ | 🔤 |
+| 14 | DROID | 2303.03135 | `Datasets/DROID/` | ✅ | 🔤 |
+| 15 | Flow Matching intro | 2404.08427 | `IL-Action-Head/Flow-Matching/` | ✅ | 🔤 |
 
 **索引入口**：[论文索引 · 0 · VLA 算法层](../paper/论文索引.md#0-algorithm)
 

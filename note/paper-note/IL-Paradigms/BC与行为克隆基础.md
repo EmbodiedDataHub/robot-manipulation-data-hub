@@ -86,7 +86,7 @@ ALOHA 论文用 **CNNMLP 作消融**：证明 Chunk + CVAE 对精细双臂操作
 
 ## 5. 选读：What Matters in Imitation Learning (Mosaic, 2021)
 
-**arXiv**: 2106.00672 · 本地：`paper/Algorithm/IL-Analysis/`
+**arXiv**: 2106.00672 · 本地：`paper/IL-Action-Head/IL-Analysis/`
 
 经验性结论（非新算法）：
 

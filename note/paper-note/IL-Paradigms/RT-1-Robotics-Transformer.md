@@ -10,7 +10,7 @@ tags:
   - multi-task
   - imitation-learning
   - paradigm
-pdf_path: "paper/Algorithm/RT-1/RT-1- Robotics Transformer for Real-World Control at Scale.pdf"
+pdf_path: "paper/VLA/RT-1/RT-1- Robotics Transformer for Real-World Control at Scale.pdf"
 related_notes:
   - "./RT-2-Vision-Language-Action.md"
   - "./概述.md"

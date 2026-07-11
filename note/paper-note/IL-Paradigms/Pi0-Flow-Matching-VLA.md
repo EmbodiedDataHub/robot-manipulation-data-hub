@@ -9,7 +9,7 @@ tags:
   - VLA
   - continuous-action
   - paradigm
-pdf_path: "paper/Algorithm/Pi0/Pi0- A Vision-Language-Action Flow Model for General Robot Control.pdf"
+pdf_path: "paper/VLA/Pi0/Pi0- A Vision-Language-Action Flow Model for General Robot Control.pdf"
 related_notes:
   - "../Diffusion-Policy/概述.md"
   - "../RDT-Foundation-Models.md"
@@ -50,7 +50,7 @@ related_notes:
 | 多模态 | ✅ | ✅ |
 | 收敛 | 较慢 | 通常更快 |
 
-**本地 PDF**：`paper/Algorithm/Flow-Matching/`（Chi et al. 教程，π0 理论基础）
+**本地 PDF**：`paper/IL-Action-Head/Flow-Matching/`（Chi et al. 教程，π0 理论基础）
 
 ---
 

@@ -10,7 +10,7 @@ tags:
   - discrete-action
   - co-training
   - paradigm
-pdf_path: "paper/Algorithm/RT-2/RT-2- Vision-Language-Action Models Transfer Web Knowledge to Robotic Control.pdf"
+pdf_path: "paper/VLA/RT-2/RT-2- Vision-Language-Action Models Transfer Web Knowledge to Robotic Control.pdf"
 related_notes:
   - "./RT-1-Robotics-Transformer.md"
   - "./OpenVLA.md"

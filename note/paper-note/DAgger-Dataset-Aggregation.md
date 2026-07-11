@@ -12,7 +12,7 @@ tags:
   - compounding-error
 aliases:
   - DAgger
-pdf_path: "paper/Algorithm/DAgger/DAgger - A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning.pdf"
+pdf_path: "paper/IL-Action-Head/DAgger/DAgger - A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning.pdf"
 ---
 
 ## 一句话总结

@@ -10,7 +10,7 @@ tags:
   - transformer
   - open-source
   - paradigm
-pdf_path: "paper/Algorithm/Octo/Octo - An Open-Source Generalist Robot Policy.pdf"
+pdf_path: "paper/VLA/Octo/Octo- An Open-Source Generalist Robot Policy.pdf"
 related_notes:
   - "./OpenVLA.md"
   - "./RT-1-Robotics-Transformer.md"

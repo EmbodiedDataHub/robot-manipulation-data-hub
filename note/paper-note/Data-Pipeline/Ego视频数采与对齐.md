@@ -46,7 +46,7 @@ related_notes:
 | ○ | Human→Robot Transfer | 何时涌现迁移 | ✅ |
 | ○ | MotionTrans | VR 人体 → robot motion | ✅ |
 
-目录：`paper/Data Acquisition/Ego Human Data/`
+目录：`paper/Data-Collection/Ego/`
 
 ---
 

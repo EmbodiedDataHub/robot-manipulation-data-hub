@@ -116,7 +116,7 @@ a_t : 机器人动作（连续向量 或 离散 token）
 | **D. Ego / 互联网视频** | EgoVLA, EgoScale, Phantom, EgoBridge | ❌ | ⭐⭐ | 极大 | RGB 视频，无 robot action | 需 retarget / latent |
 | **E. 仿真 / 合成** | MimicGen, RoboGen, LIBERO | ❌(虚拟) | ⭐⭐⭐ | 极大 | sim state + render | 与 sim 一致 EEF/joint |
 
-**本地论文索引**：[`paper/论文索引.md`](../paper/论文索引.md) §1–§5 Data Acquisition
+**本地论文索引**：[`paper/论文索引.md`](../paper/论文索引.md) · [Data-Collection 数采论文](../paper/README.md)
 
 ---
 
@@ -217,7 +217,7 @@ VR 头显 + 手柄/手套 → 人体 6D pose
 2. 立体双目存 **left/right** 或 stacked，与训练一致
 3. whole-body 高维 action → Unified Action Space 或 embodiment-specific head
 
-**本地 PDF**：`paper/Data Acquisition/VR Teleoperation/`
+**本地 PDF**：`paper/Data-Collection/VR-Humanoid/`
 
 ---
 
@@ -260,7 +260,7 @@ VR 头显 + 手柄/手套 → 人体 6D pose
 - 自动 success 标签（sim 优势）
 - VLM critic 过滤不合理轨迹（2026 实践）
 
-**本地 PDF**：`paper/Data Acquisition/Data Generation/MimicGen...`
+**本地 PDF**：`paper/Datasets/MimicGen/MimicGen...`
 
 ---
 
@@ -676,13 +676,13 @@ Raw:
 
 | 范式 | 论文 # | 目录 |
 |------|--------|------|
-| Teleop | 26–32 | `paper/Data Acquisition/Robot Teleoperation/` |
-| 手持 UMI | 33–40 | `paper/Data Acquisition/Hand-Held Grippers Teleoperation/` |
-| VR 人形 | 41–43 | `paper/Data Acquisition/VR Teleoperation/` |
-| Ego 人类 | 44, 50–60 | `paper/Data Acquisition/Ego Human Data/` |
-| 仿真生成 | 4, 等 | `paper/Data Acquisition/Data Generation/` |
+| Teleop | 26–32 | `paper/Data-Collection/ALOHA/` |
+| 手持 UMI | 33–40 | `paper/Data-Collection/UMI/` |
+| VR 人形 | 41–43 | `paper/Data-Collection/VR-Humanoid/` |
+| Ego 人类 | 44, 50–60 | `paper/Data-Collection/Ego/` |
+| 仿真生成 | 4, 等 | `paper/Datasets/MimicGen/` |
 | 数据格式/OXE | 2, 综述 | `paper/Surveys/` |
-| FM 数据工程 | 47–48 | `paper/Foundation Models/` |
+| FM 数据工程 | 47–48 | `paper/Foundation-Models/RDT-1B/` |
 
 完整可点击索引：[论文索引.md](../paper/论文索引.md)
 

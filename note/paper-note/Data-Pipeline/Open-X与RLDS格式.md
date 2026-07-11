@@ -8,7 +8,7 @@ tags:
 related_notes:
   - "../../数采到VLA训练-数据管线整体方案.md"
   - "../VLA-Datasets-Benchmarks-Data-Engines.md"
-pdf_path: "paper/Surveys/Open-X-Embodiment-2310.08864.pdf"
+pdf_path: "paper/Surveys/Open-X-Embodiment-2310.08864/Open-X-Embodiment-2310.08864.pdf"
 ---
 
 ## 一句话
@@ -25,7 +25,7 @@ pdf_path: "paper/Surveys/Open-X-Embodiment-2310.08864.pdf"
 | 单机器人数据不够 FM | **1M+ 混合预训练** |
 | 跨 robot 迁移 | RT-1-X **+50%** 成功率（有条件） |
 
-**论文**：arXiv:2310.08864 · 本地 `paper/Surveys/Open-X-Embodiment-2310.08864.pdf`
+**论文**：arXiv:2310.08864 · 本地 `paper/Surveys/Open-X-Embodiment-2310.08864/Open-X-Embodiment-2310.08864.pdf`
 
 ---
 

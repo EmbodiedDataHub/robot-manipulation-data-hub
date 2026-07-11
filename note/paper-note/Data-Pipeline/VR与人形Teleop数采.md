@@ -13,9 +13,9 @@ related_notes:
   - "../ALOHA/概述.md"
   - "../ALOHA/ACT-Model-Working-Principles.md"
 pdf_path:
-  - "paper/Data Acquisition/VR Teleoperation/Open-TeleVision.pdf"
-  - "paper/Data Acquisition/VR Teleoperation/OPEN TEACH.pdf"
-  - "paper/Data Acquisition/VR Teleoperation/TWIST2- Scalable, Portable, and Holistic Humanoid Data Collection System.pdf"
+  - "paper/Data-Collection/VR-Humanoid/Open-TeleVision.pdf"
+  - "paper/Data-Collection/VR-Humanoid/OPEN TEACH.pdf"
+  - "paper/Data-Collection/VR-Humanoid/TWIST2- Scalable, Portable, and Holistic Humanoid Data Collection System.pdf"
 updated: "2026-07-10"
 ---
 
@@ -45,7 +45,7 @@ updated: "2026-07-10"
 
 **论文**：arXiv [2407.01512](https://arxiv.org/abs/2407.01512) · CoRL 2024  
 **机构**：UC San Diego + MIT  
-**本地 PDF**：`paper/Data Acquisition/VR Teleoperation/Open-TeleVision.pdf`
+**本地 PDF**：`paper/Data-Collection/VR-Humanoid/Open-TeleVision.pdf`
 
 ### 2.1 系统架构（60 Hz 闭环）
 

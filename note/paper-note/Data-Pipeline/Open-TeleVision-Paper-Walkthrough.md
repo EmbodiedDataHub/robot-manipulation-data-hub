@@ -15,7 +15,7 @@ tags:
 aliases:
   - OTV
   - TeleVision
-paper_path: "paper/Data Acquisition/VR Teleoperation/Open-TeleVision.pdf"
+paper_path: "paper/Data-Collection/VR-Humanoid/Open-TeleVision.pdf"
 code_path: "https://github.com/OpenTeleVision/TeleVision"
 project_website: "https://robot-tv.github.io"
 related_notes:
@@ -40,7 +40,7 @@ Open-TeleVision 提出 **沉浸式 VR 遥操作 + 机器人主动立体头显**�
 | 机构 | UC San Diego¹ · MIT² |
 | 发表 | arXiv:2407.01512 · **CoRL 2024** |
 | 开源 | [robot-tv.github.io](https://robot-tv.github.io/) · [GitHub: OpenTeleVision/TeleVision](https://github.com/OpenTeleVision/TeleVision) |
-| 本地 PDF | `paper/Data Acquisition/VR Teleoperation/Open-TeleVision.pdf` |
+| 本地 PDF | `paper/Data-Collection/VR-Humanoid/Open-TeleVision.pdf` |
 | 关联笔记 | [VR 数采概览](./VR与人形Teleop数采.md) · [ACT 原理](../ALOHA/ACT-Model-Working-Principles.md) |
 
 ---
