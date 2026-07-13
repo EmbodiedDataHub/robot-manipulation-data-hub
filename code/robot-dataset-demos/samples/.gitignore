@@ -1,0 +1,4 @@
+# Large downloads from download_samples.sh — keep minimal local samples only
+lerobot_aloha_sim_hf/
+LIBERO/
+tensorflow_datasets/

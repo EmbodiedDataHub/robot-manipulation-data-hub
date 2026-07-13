@@ -1,0 +1,8 @@
+h5py>=3.8
+pandas>=2.0
+pyarrow>=14.0
+huggingface_hub>=0.20
+
+# 可选：解析 RLDS 时需要
+# tensorflow>=2.15
+# tensorflow-datasets>=4.9

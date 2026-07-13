@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Sample data — download locally via scripts/download_samples.sh
+samples/*
+!samples/.gitignore
+
+# IDE
+.idea/
+.vscode/

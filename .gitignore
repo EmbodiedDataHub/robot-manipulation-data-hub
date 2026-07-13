@@ -2,6 +2,11 @@
 __pycache__/
 *.pyc
 .claude/settings.local.json
+.claudian/
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .obsidian/cache/
+
+# robot-dataset-demos: scripts only, samples downloaded locally
+code/robot-dataset-demos/samples/*
+!code/robot-dataset-demos/samples/.gitignore
