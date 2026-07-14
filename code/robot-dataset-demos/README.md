@@ -36,12 +36,34 @@ export HF_ENDPOINT=https://hf-mirror.com
 
 ---
 
+## Notebook 教程（推荐）
+
+交互式走通两种标准格式（相对本目录）：
+
+```bash
+cd code/robot-dataset-demos
+pip install -r requirements.txt
+jupyter notebook notebooks/01_lerobot_format.ipynb   # 先跑这个（无需 TF）
+pip install -r requirements-rlds.txt
+jupyter notebook notebooks/02_rlds_format.ipynb      # 需本机 droid_100 样例
+```
+
+| Notebook | 讲什么 | 默认样例 |
+|----------|--------|----------|
+| [`notebooks/01_lerobot_format.ipynb`](./notebooks/01_lerobot_format.ipynb) | 目录 / `info.json` / parquet 一帧 / 视频对齐 / 动作曲线 | `lerobot_aloha_sim_hf` 或 `lerobot_minimal` |
+| [`notebooks/02_rlds_format.ipynb`](./notebooks/02_rlds_format.ipynb) | Episode→Steps / features 描述 / `action` vs `action_dict` / 图像 | `tensorflow_datasets/droid_100/1.0.0` |
+
+---
+
 ## 目录结构
 
 ```text
 robot-dataset-demos/
 ├── README.md
 ├── requirements.txt
+├── notebooks/
+│   ├── 01_lerobot_format.ipynb     # LeRobot 交互解析
+│   └── 02_rlds_format.ipynb        # RLDS 交互解析
 ├── scripts/
 │   ├── create_minimal_samples.py   # 离线生成 HDF5 + LeRobot 结构
 │   ├── download_samples.sh         # 下载公开小样

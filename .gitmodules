@@ -7,3 +7,18 @@
 [submodule "code/diffusion_policy"]
 	path = code/diffusion_policy
 	url = git@github.com:EmbodiedDataHub/diffusion_policy.git
+[submodule "book/Awesome-VLA"]
+	path = book/Awesome-VLA
+	url = git@github.com:EmbodiedDataHub/Awesome-VLA.git
+[submodule "code/openvla"]
+	path = code/openvla
+	url = git@github.com:EmbodiedDataHub/openvla.git
+[submodule "code/octo"]
+	path = code/octo
+	url = git@github.com:EmbodiedDataHub/octo.git
+[submodule "code/openpi"]
+	path = code/openpi
+	url = git@github.com:EmbodiedDataHub/openpi.git
+[submodule "code/RoboticsDiffusionTransformer"]
+	path = code/RoboticsDiffusionTransformer
+	url = git@github.com:EmbodiedDataHub/RoboticsDiffusionTransformer.git

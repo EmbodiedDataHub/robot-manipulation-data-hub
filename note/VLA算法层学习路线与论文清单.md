@@ -65,12 +65,12 @@ Layer 7  前沿                 世界模型 · Ego→VLA · RL post-training
 
 **本层要搞懂**：动作怎么参数化、Transformer 怎么做 policy、Diffusion 怎么接 vision。
 
-| 序 | 优先级 | 论文 | arXiv | 本地 | 译 | 读什么 | 搞懂什么 |
-|:--:|:------:|------|-------|:----:|:--:|--------|---------|
-| 1.1 | ⭐ | **Diffusion Policy** | 2303.04137 | ⬜ | — | Method 全文 | Visual conditioning、horizon H、推理 loop |
-| 1.2 | ⭐ | **ACT** (见 ALOHA) | 2304.13705 | ✅ | 🔤 | ACT 节 | Chunk size、k=100、CVAE latent |
-| 1.3 | ○ | 3D Diffusion Policy | [2406.01586](https://arxiv.org/abs/2406.01586) | ⬜ | — | Abstract | 点云/深度作为 obs 的 diffusion |
-| 1.4 | ○ | Chi et al. Flow Matching 综述 | [2404.08427](https://arxiv.org/abs/2404.08427) | ⬜ | — | §1–2 | π0 的理论基础 |
+|  序  | 优先级 | 论文                          | arXiv                                          | 本地  |  译  | 读什么       | 搞懂什么                                  |
+| :-: | :-: | --------------------------- | ---------------------------------------------- | :-: | :-: | --------- | ------------------------------------- |
+| 1.1 |  ⭐  | **Diffusion Policy**        | 2303.04137                                     |  ⬜  |  —  | Method 全文 | Visual conditioning、horizon H、推理 loop |
+| 1.2 |  ⭐  | **ACT** (见 ALOHA)           | 2304.13705                                     |  ✅  | 🔤  | ACT 节     | Chunk size、k=100、CVAE latent          |
+| 1.3 |  ○  | 3D Diffusion Policy         | [2406.01586](https://arxiv.org/abs/2406.01586) |  ⬜  |  —  | Abstract  | 点云/深度作为 obs 的 diffusion               |
+| 1.4 |  ○  | Chi et al. Flow Matching 综述 | [2404.08427](https://arxiv.org/abs/2404.08427) |  ⬜  |  —  | §1–2      | π0 的理论基础                              |
 
 **与数据层的连接**：读 UMI 时对照——为什么 relative delta + Diffusion Policy 是黄金组合。
 
@@ -80,11 +80,11 @@ Layer 7  前沿                 世界模型 · Ego→VLA · RL post-training
 
 **本层要搞懂**：RT-1 如何把 700+ 任务合成一个 Transformer；Action tokenization 的前身。
 
-| 序 | 优先级 | 论文 | arXiv | 本地 | 译 | 读什么 | 搞懂什么 |
-|:--:|:------:|------|-------|:----:|:--:|--------|---------|
-| 2.1 | ⭐ | **RT-1: Robotics Transformer** | [2212.06817](https://arxiv.org/abs/2212.06817) | ⬜ | — | §1–4 + Fig 2 | TokenLearner、离散 action、多任务 |
-| 2.2 | ○ | **BC-Z** (Google) | [2203.02827](https://arxiv.org/abs/2203.02827) | ⬜ | — | Abstract | 语言条件 + BC 的早期大规模尝试 |
-| 2.3 | ○ | **Gato** | [2205.05176](https://arxiv.org/abs/2205.05176) | ⬜ | — | §2 | 通用 token 序列（机器人只是模态之一） |
+|  序  | 优先级 | 论文                             | arXiv                                          | 本地  |  译  | 读什么          | 搞懂什么                       |
+| :-: | :-: | ------------------------------ | ---------------------------------------------- | :-: | :-: | ------------ | -------------------------- |
+| 2.1 |  ⭐  | **RT-1: Robotics Transformer** | [2212.06817](https://arxiv.org/abs/2212.06817) |  ⬜  |  —  | §1–4 + Fig 2 | TokenLearner、离散 action、多任务 |
+| 2.2 |  ○  | **BC-Z** (Google)              | [2203.02827](https://arxiv.org/abs/2203.02827) |  ⬜  |  —  | Abstract     | 语言条件 + BC 的早期大规模尝试         |
+| 2.3 |  ○  | **Gato**                       | [2205.05176](https://arxiv.org/abs/2205.05176) |  ⬜  |  —  | §2           | 通用 token 序列（机器人只是模态之一）     |
 
 **关键概念**：
 - **EfficientNet-B3 + TokenLearner** → 图像压成少量 token
